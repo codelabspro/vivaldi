@@ -72,42 +72,46 @@ OS name: "mac os x", version: "10.12.6", arch: "x86_64", family: "mac"
 ```
 > This should end with build success 
 
+```
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
 [INFO] Total time: 25.470 s
 [INFO] Finished at: 2018-02-08T02:19:29-05:00
 [INFO] Final Memory: 29M/271M
-
+```
 
 // ------------------------------------------------------------------------
  
-- Add @SpringBootApplication annotation to App.java class
+> Add @SpringBootApplication annotation to App.java class
 
 // ------------------------------------------------------------------------
 
-- Add the following import to App class
+>  Add the following import to App class
+```
 import org.springframework.boot.SpringApplication;
+```
+// ------------------------------------------------------------------------
+
+> Call the SpringApplication.run(App.class, args) method in main(String[] args) 
+
 
 // ------------------------------------------------------------------------
 
-- Call the SpringApplication.run(App.class, args) method in main(String[] args) 
+> Tell SpringBoot to start the app, create a Servlet container and host the app in a Servlet container
 
 
-// ------------------------------------------------------------------------
+> Run mvn clean install
 
-- Tell SpringBoot to start the app, create a Servlet container and host the app in a Servlet container
-
-
-- Run mvn clean install
-
+```
 ==> mvn clean install
+```
 
-This should end with build success 
+> This should end with build success 
 
 // ------------------------------------------------------------------------
 
-- Run using mvn spring-boot:run
+> Run using mvn spring-boot:run
 
 This should start running the app :
 
@@ -122,8 +126,8 @@ This should start running the app :
 // ------------------------------------------------------------------------
 
 
- Create the following WelcomeController class as follows
-
+> Create the following WelcomeController class as follows
+```
  package com.codesdk.welcome;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -138,13 +142,13 @@ public class WelcomeController {
     }
 
 }
-
+```
 
 // ------------------------------------------------------------------------
 
-Add CategoryController 
+> Add CategoryController 
 
-
+```
 package com.codesdk.category;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -159,8 +163,8 @@ public class CategoryController {
     }
 
 }
-
+```
 // ------------------------------------------------------------------------
 
-Create a Category class as follows :
+> Create a Category class as follows :
 
