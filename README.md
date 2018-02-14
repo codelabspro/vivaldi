@@ -43,7 +43,7 @@ OS name: "mac os x", version: "10.12.6", arch: "x86_64", family: "mac"
 
 
 - Add the following to pom.xml before the closing </project> tag
-
+```
    <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -61,6 +61,7 @@ OS name: "mac os x", version: "10.12.6", arch: "x86_64", family: "mac"
   <properties>
     <java class="version">1.8</java>
   </properties>
+```
 
 // ------------------------------------------------------------------------
 
