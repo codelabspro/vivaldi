@@ -35,14 +35,15 @@ Default locale: en_US, platform encoding: UTF-8
 OS name: "mac os x", version: "10.12.6", arch: "x86_64", family: "mac"
 
 ## Steps
-
+> Initialize mvn project 
+```
 ==> mvn archetype:generate -DgroupId=com.codesdk \
    -DartifactId=vivaldi \
    -DarchetypeArtifactId=maven-archetype-quickstart \
    -DinteractiveMode=false
+```
 
-
-- Add the following to pom.xml before the closing </project> tag
+> Add the following to pom.xml before the closing </project> tag
 ```
    <parent>
         <groupId>org.springframework.boot</groupId>
@@ -65,11 +66,11 @@ OS name: "mac os x", version: "10.12.6", arch: "x86_64", family: "mac"
 
 // ------------------------------------------------------------------------
 
-- Run mvn clean install
-
+> Run mvn clean install
+```
 ==> mvn clean install
-
-This should end with build success 
+```
+> This should end with build success 
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
